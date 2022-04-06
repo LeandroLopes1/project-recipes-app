@@ -14,6 +14,11 @@ class Incial extends Component {
     this.handleInput = this.handleInput.bind(this);
   }
 
+  componentDidMount() {
+    // eslint-disable-next-line no-alert
+    alert('Por favor, visualize em 360x640');
+  }
+
   componentWillUnmount() {
     const { email } = this.state;
     localStorage.setItem('user', JSON.stringify({ email }));
